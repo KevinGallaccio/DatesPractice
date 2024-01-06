@@ -41,11 +41,7 @@ public class WorldClockApplication {
 		// time zone you put in using tbe zone id.  Try putting in zonedDateTime.withZoneSameInstant(BRISBANE)...
 		
 		// after we grabbed the time in our country, we need to format the output using our DateTimeFormatter...
-		
-		// we need to format it in a way that is easily readable, for this assignment, use FormatStyle.MEDIUM
-		
-		// ... .format(DateTImeFormatter.ofLocalizedDateTIme(FormatStyle.MEDIUM));
-		
+				
 		System.out.println("Brisbane, Australia -> " + brisbaneZonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm a")));
 		System.out.println("Dublin, Ireland -> " + dublinZonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm a")));
 		System.out.println(purple + "My Location (" + ZoneId.systemDefault() + ") -> " + zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm a")) + reset);
