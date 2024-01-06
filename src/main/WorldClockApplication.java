@@ -17,6 +17,7 @@ public class WorldClockApplication {
 
 	public static void main(String[] args) {
 		
+		System.out.println("- - - -");
 		
 		// first we need to capture what the time is at this exact moment...
 		ZonedDateTime zonedDateTime = ZonedDateTime.now();
